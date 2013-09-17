@@ -1,0 +1,78 @@
+ <head>
+	<title>whisky</title>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div class="container-narrow">
+		<div class="row-fluid">
+			<div id="sitename" class = "span2">whisky </div>
+			<div id="siteversion" class = "span2"> version 1.0 </div>
+		</div>
+		<hr id="topline">
+		<div class="row-fluid">
+			<div class="span1">{{> data_set_menu}}<br>{{> data_set_menu2}}</div>			
+			{{> loaddata}}
+		</div>
+		
+			<div class="span6 offset1">
+				{{> data_set_menu3}}
+			</div>
+			<div class="span3">
+				<div style="font-size:18px;">feature: <input style="position:relative;top:3px;" type="range" min="0" max="1" value="0"></div>
+			</div>
+		
+	</div>
+</body>
+
+<template name="data_set_menu">
+	<div id="menuname">animals:</div>
+	<ul class="nav nav-list data_set_menu">
+		{{#each data_sets}}
+		<li class="{{selected}} data_set_menu_item"> <a>{{data_set}}</a></li>
+		{{/each}}
+	</ul>
+</template>
+
+<template name="data_set_menu2">
+<div id="menuname">data type:</div>
+	<ul class="nav nav-list data_set_menu2">
+		{{#each data_sets2}}
+		<li class="{{selected}} pull-left data_set_menu_item2"> <a>{{data_set2}}</a></li>
+		{{/each}}
+	</ul>
+</template>
+
+<template name="data_set_menu3">
+	<div class="pagination pagination-small">
+		<ul>
+		{{#each data_sets3}}
+		<li class="{{selected}} pull-left data_set_menu_item3"> <a>{{data_set3}}</a></li>
+		{{/each}}
+		</ul>
+	</div>
+</template>
+
+<template name="loaddata">
+	<div id="loadedData">
+		showing {{data_set}}
+		showing {{data_set2}}
+		showing {{data_set3}}
+	</div>
+	<div class="row-fluid">
+		<div class="span6" id="roiContainer"></div>
+		<div class="span5">
+			<div class="row-fluid">
+				<div class="span8" id="filtContainer"></div>
+				<div class="span4"><div id="pop-up"><div id="pop-desc"></div></div></div>
+			</div>
+			<div class="row-fluid">
+				<div class="span4" id="nlContainer1"></div>
+				<div class="span4 offset1" id="nlContainer2"></div>
+			</div>
+			<div class="row-fluid">
+				<div class="span4" id="magContainer"></div>
+			</div>
+		</div>
+	</div>
+</template>

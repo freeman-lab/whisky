@@ -1,0 +1,136 @@
+*{
+	-webkit-tap-highlight-color : rgba(0,0,0,0);
+	-webkit-user-select         : none;                /* disable text select */
+	-webkit-touch-callout       : none;              /* disable callout, image save panel (popup) */
+	-webkit-tap-highlight-color : transparent; /* "turn off" link highlight */
+}
+
+body {
+	font-family      : 'Quicksand', Helvetica, Arial, sans-serif;
+	font-weight   : 300;
+	padding-left  : 20px;
+	padding-right : 20px;
+	background: rgb(180,180,180);
+}
+
+.container-narrow {
+	margin    : 0 auto;
+	max-width : 1400px;
+}
+
+#sitename { 
+	font-size  : 32px;
+	margin-top : 20px;
+}
+
+#siteversion, #sitehelp { 
+	font-size  : 18px;
+	margin-top : 25px;
+	text-align : left;
+}
+
+#loadedData {
+	color: rgb(180,180,180);
+}
+
+.data_set_menu_item, .data_set_menu_item2, .data_set_menu_item3 {
+	cursor: pointer;
+}
+
+a {
+	color: rgb(100,100,100);
+}
+
+a:hover {
+	color: rgb(0,0,0);
+}
+
+.nav-list > li > a {
+	margin-left: -30px;
+}
+
+.nav-list > .active > a {
+	background-color: rgb(50,50,50);
+}
+
+.nav-list > .active > a:hover {
+	background-color: rgb(50,50,50);
+}
+
+.nav-list > .active > a:focus {
+	background-color: rgb(50,50,50);
+}
+
+.pagination ul > .active > a {
+	color: rgb(255,255,255);
+	background-color: rgb(0,0,0);
+}
+
+.pagination ul > .active > a:hover {
+	background-color: rgb(0,0,0);
+}
+
+.pagination ul > .active > a:focus {
+	background-color: rgb(0,0,0);
+}
+
+#roiContainer {
+	width  : 600;
+	height : 600;
+	padding-left: 30px;
+}
+
+#filtContainer {
+	width  : 400;
+	height : 150;
+}
+
+path.filtLine {
+	fill         : none;
+	opacity      : 1;
+	stroke-width : 5px;
+}
+
+path.nlLine1, path.nlLine2 {
+	fill         : none;
+	stroke-width : 5px;
+}
+
+#nlContainer1, #nlContainer2 {
+	width  : 200;
+	height : 200;
+}
+
+#magContainer {
+	width  : 200;
+	height : 200;
+}
+
+#pop-up {
+	margin-top : 15px;
+	margin-left : 60px;
+	color      : black;
+	text-align : left;
+	display    : on;
+}
+
+#pop-img {
+	font-size   : 14px;
+	font-weight : 600;
+}
+
+#pop-desc {
+	font-size   : 14px;
+	font-weight : 200;
+}
+
+.axis {
+	shape-rendering : crispEdges;
+}
+
+.axis path, .axis line {
+	fill         : none;
+	stroke       : black;
+	stroke-width : 2px;
+	opacity      : 1;
+}
